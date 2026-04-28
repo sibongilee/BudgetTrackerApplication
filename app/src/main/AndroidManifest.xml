@@ -11,28 +11,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.BudgetTrackerApplication">
-        <activity
-            android:name=".BudgetActivity"
-            android:exported="false" />
-        <activity
-            android:name=".ViewExpensesActivity"
-            android:exported="false" />
-        <activity
-            android:name=".AddExpenseActivity"
-            android:exported="false" />
-        <activity
-            android:name=".AddCategoryActivity"
-            android:exported="false" />
-        <activity
-            android:name=".LoginActivity"
-            android:exported="false" />
-        <activity
-            android:name=".MainActivity"
-            android:exported="true">
+        <activity android:name=".MainActivity"/>
+        <activity android:name=".AddExpenseActivity"/>
+        <activity android:name=".AddCategoryActivity"/>
+        <activity android:name=".ViewExpensesActivity"/>
+        <activity android:name=".BudgetActivity"/>
+        <activity android:name=".LoginActivity" android:exported="true">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
 
-                <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
     </application>

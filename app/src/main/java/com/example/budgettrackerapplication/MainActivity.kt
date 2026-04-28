@@ -3,40 +3,44 @@ package com.example.budgettrackerapplication
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 import android.widget.Button
 import android.content.Intent
-import android.widget.ToggleButton
+import android.widget.Toast
+
 
 class MainActivity : AppCompatActivity() {
-    private var userId: Long = 0
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
+        // dashboard layout
         setContentView(R.layout.activity_main)
-        // get user id from intent
-        findViewById<Button>(R.id.btnAddExpense).setOnClickListener {
+        // Student-written: linking buttons
+        val btnAddExpense = findViewById<Button>(R.id.btnAddExpense)
+        val btnViewExpenses = findViewById<Button>(R.id.btnViewExpenses)
+        val btnCategory = findViewById<Button>(R.id.btnAddCategory)
+        val btnBudget = findViewById<Button>(R.id.btnBudget)
+
+        // Navigation with safety Toast (debug)
+        btnAddExpense.setOnClickListener {
+            Toast.makeText(this, "Opening Add Expense", Toast.LENGTH_SHORT).show()
             startActivity(Intent(this, AddExpenseActivity::class.java))
         }
-        // set up buttons
 
-        findViewById<Button>(R.id.btnViewExpenses).setOnClickListener {
+        btnViewExpenses.setOnClickListener {
+            Toast.makeText(this, "Opening View Expenses", Toast.LENGTH_SHORT).show()
             startActivity(Intent(this, ViewExpensesActivity::class.java))
         }
 
-        findViewById<Button>(R.id.btnAddCategory).setOnClickListener {
+        btnCategory.setOnClickListener {
+            Toast.makeText(this, "Opening Categories", Toast.LENGTH_SHORT).show()
             startActivity(Intent(this, AddCategoryActivity::class.java))
         }
 
-        findViewById<Button>(R.id.btnBudget).setOnClickListener {
+        btnBudget.setOnClickListener {
+            Toast.makeText(this, "Opening Budget", Toast.LENGTH_SHORT).show()
             startActivity(Intent(this, BudgetActivity::class.java))
         }
-        // set up window insets
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
-            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
-            insets
-        }
+
+
     }
 }

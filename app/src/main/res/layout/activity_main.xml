@@ -11,7 +11,8 @@
         android:padding="20dp"
         android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:background="@color/light_green">
 
         <!-- The logo -->
         <ImageView
@@ -27,7 +28,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:layout_marginBottom="20dp"/>
+            android:layout_marginBottom="20dp"
+            android:textColor="@color/primary_green"/>
         <TextView
             android:text="Welcome 👋"
             android:textSize="22sp"
