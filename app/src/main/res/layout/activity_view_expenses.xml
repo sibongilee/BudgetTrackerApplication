@@ -66,6 +66,12 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"/>
+            <TextView
+                android:id="@+id/tvPlaceholder"
+                android:text="@string/no_expenses_found"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"/>
 
         </LinearLayout>
 
