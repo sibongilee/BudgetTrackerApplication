@@ -4,7 +4,7 @@ A mobile application built with Kotlin for tracking and managing personal financ
 
 ## Overview
 
-Budget Tracker Application is an Android application designed to help users monitor their spending, track expenses, and manage their budgets effectively. Built with modern Android development practices using Kotlin.
+Budget Tracker Application is an Android application designed to help users monitor their spending, track expenses, and manage their budgets effectively. Built with modern Android development practices.
 
 ## Tech Stack
 
@@ -91,6 +91,7 @@ This project is currently unlicensed. Consider adding a LICENSE file to specify 
 
 - **[@sibongilee](https://github.com/sibongilee)** 
 - **[@Natasha-Mvundlela](https://github.com/Natasha-Mvundlela)**
+- **[@ronewa1974](https://github.com/ronewa1974)**
 
 ## Support
 
@@ -102,4 +103,4 @@ Current Version: 0.1.0 (Initial Release)
 
 ---
 
-**Last Updated:** April 27, 2026
+**Last Updated:** 2026-04-28 17:45:42
