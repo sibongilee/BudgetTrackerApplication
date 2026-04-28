@@ -19,6 +19,9 @@ Budget Tracker Application is an Android application designed to help users moni
 - Categorize spending
 - Set and monitor budgets
 - View spending reports and analytics
+- SQLite Database implemented
+- Expense tracking working
+- View expenses screen added
 - [Add more features as your project develops]
 
 ## Getting Started
