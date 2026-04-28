@@ -20,12 +20,9 @@ class ViewExpensesActivity : AppCompatActivity() {
         }
         val dbHelper = DatabaseHelper(this)
 
-        val listView = findViewById<ListView>(R.id.listViewExpenses)
-
         val data = dbHelper.getAllExpenses()
 
         val adapter = ArrayAdapter(this, android.R.layout.simple_list_item_1, data)
 
-        listView.adapter = adapter
     }
 }
