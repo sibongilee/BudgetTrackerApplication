@@ -119,6 +119,16 @@ BudgetTrackerApplication/
 ```
 
 ---
+Design Decisions
+
+Several design decisions were made during the development of this application:
+
+A simple and user-friendly interface was designed using Material Design principles.
+Green colour themes were selected to represent financial growth and stability.
+SQLite was chosen for local data storage because it is lightweight and suitable for mobile applications.
+CardViews were used throughout the application to create a modern and organized user interface.
+Separate activities were created for Login, Registration, Expense Management, Category Management, Budget Goals, Rewards, and Spending Graphs to improve usability and navigation.
+---
 
 ## Database Schema
 
@@ -168,6 +178,12 @@ dependencies {
 ```
 
 ---
+GitHub and GitHub Actions
+
+GitHub was used throughout the project for version control and collaboration between team members. Changes were committed regularly to track development progress and maintain code history.
+
+GitHub Actions was implemented to automate the application build process and verify that the project could be successfully built in a cloud environment. This helps ensure that the application works correctly across different systems and development environments.
+---
 
 ## Testing
 
@@ -194,6 +210,26 @@ dependencies {
 | [64076869](https://github.com/sibongilee/BudgetTrackerApplication/commit/64076869c7f96cd253dc76ccb0b95523f232bac1) | Add logging for navigation and dashboard events | 2026-06-15 18:59:04 |
 
 ---
+Video Demonstration
+
+YouTube Video Link:
+
+--
+
+Custom Feature 1: Rewards and Badges System
+
+The application includes a gamification feature that rewards users for achieving budgeting goals and maintaining consistent expense tracking habits. Users can earn badges such as:
+
+Budget Master
+Expense Logger
+Savings Champion
+
+This feature encourages users to remain engaged and motivated while managing their finances.
+---
+
+Custom Feature 2: Dashboard Statistics
+
+The dashboard displays financial summary information, including total expenses and category statistics. This provides users with a quick overview of their spending activity without needing to navigate through multiple screens.
 
 ## Authors
 
