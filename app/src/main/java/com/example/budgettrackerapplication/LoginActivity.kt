@@ -9,37 +9,56 @@ import android.widget.EditText
 import android.widget.Button
 import android.widget.Toast
 import android.content.Intent
-
+import com.google.android.material.textfield.TextInputLayout
 
 class LoginActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        // setting the login screen layout
         setContentView(R.layout.activity_login)
-        // Calling the database helper class
+
         val db = DatabaseHelper(this)
-        // getting the username and password from the user
+
         val etUsername = findViewById<EditText>(R.id.etUsername)
         val etPassword = findViewById<EditText>(R.id.etPassword)
+        val tilPassword = findViewById<TextInputLayout>(R.id.tilPassword)
         val btnLogin = findViewById<Button>(R.id.btnLogin)
+        val btnCreateAccount = findViewById<Button>(R.id.btnCreateAccount)
 
         btnLogin.setOnClickListener {
             val username = etUsername.text.toString().trim()
             val password = etPassword.text.toString().trim()
 
-            if (username.isEmpty() || password.isEmpty()) {
-                Toast.makeText(this, "Enter login details", Toast.LENGTH_SHORT).show()
-            } else {
-                // Student-written: register user first if they do not exist
-                if (!db.loginUser(username, password)) {
-                    db.registerUser(username, password)
+            when {
+                username.isEmpty() -> {
+                    Toast.makeText(this, "Please enter username", Toast.LENGTH_SHORT).show()
                 }
-
-                startActivity(Intent(this, MainActivity::class.java))
-                finish()
+                password.isEmpty() -> {
+                    Toast.makeText(this, "Please enter password", Toast.LENGTH_SHORT).show()
+                }
+                password.length < 8 -> {
+                    tilPassword.error = "Password must be at least 8 characters"
+                    Toast.makeText(this, "Password must be at least 8 characters", Toast.LENGTH_SHORT).show()
+                }
+                else -> {
+                    tilPassword.error = null
+                    if (db.loginUser(username, password)) {
+                        Toast.makeText(this, "Welcome back!", Toast.LENGTH_SHORT).show()
+                        val intent = Intent(this, MainActivity::class.java)
+                        intent.putExtra("USERNAME", username)
+                        startActivity(intent)
+                        finish()
+                    } else {
+                        Toast.makeText(this, "Invalid username or password", Toast.LENGTH_SHORT).show()
+                    }
+                }
             }
+        }
+
+        btnCreateAccount.setOnClickListener {
+            val intent = Intent(this, RegisterActivity::class.java)
+            startActivity(intent)
         }
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
