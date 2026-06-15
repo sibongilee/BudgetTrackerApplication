@@ -10,12 +10,14 @@ import android.content.Intent
 import android.widget.TextView
 import androidx.appcompat.widget.Toolbar
 import com.example.budgettrackerapplication.R
+import android.util.Log
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_main)
+        Log.d("MainActivity", "Dashboard opened for user: $username")
 
         // Setup toolbar
         val toolbar = findViewById<Toolbar>(R.id.toolbar)
@@ -41,10 +43,12 @@ class MainActivity : AppCompatActivity() {
         val btnGraph = findViewById<Button>(R.id.btnGraph)
 
         btnAddExpense.setOnClickListener {
+            Log.d("MainActivity", "Navigating to Add Expense")
             startActivity(Intent(this, AddExpenseActivity::class.java))
         }
 
         btnViewExpenses.setOnClickListener {
+            Log.d("MainActivity", "Navigating to View Expenses")
             startActivity(Intent(this, ViewExpensesActivity::class.java))
         }
 
@@ -53,6 +57,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         btnBudget.setOnClickListener {
+            Log.d("MainActivity", "Navigating to Budget Goals")
             startActivity(Intent(this, BudgetActivity::class.java))
         }
         btnRewards.setOnClickListener {
