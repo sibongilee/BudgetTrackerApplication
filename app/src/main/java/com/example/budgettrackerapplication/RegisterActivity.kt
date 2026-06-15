@@ -10,6 +10,7 @@ import android.content.Intent
 class RegisterActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
+        Log.d("RegisterActivity", "New user registered:$username")
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_register)
 
