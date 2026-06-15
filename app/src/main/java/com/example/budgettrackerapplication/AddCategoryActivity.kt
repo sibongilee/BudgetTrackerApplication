@@ -14,6 +14,7 @@ import com.example.budgettrackerapplication.R
 
 class AddCategoryActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
+        Log.d("AddCategoryActivity", "Category added successfully")
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_add_category)
