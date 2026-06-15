@@ -6,7 +6,7 @@ A comprehensive mobile application built with **Kotlin** for tracking personal f
 
 ## Overview
 
-Budget Tracker is an Android app designed to help users take control of their financial life. Track daily spending, organize expenses by category, set budget limits, and gain valuable insights into spending habits.
+Budget Tracker is an Android app designed to help users take control of their financial life. Track daily spending, organize expenses by category, set budget limits, and gain valuable insights into sp[...]
 
 ---
 
@@ -181,6 +181,20 @@ dependencies {
 
 ---
 
+## Recent Commits by ronewa1974
+
+| Commit | Message | Date |
+|--------|---------|------|
+| [9c74df0](https://github.com/sibongilee/BudgetTrackerApplication/commit/9c74df04338f22666ac07c30d4bd77150a4af1ca) | Remove duplicate log statement in onCreate | 2026-06-15 19:09:08 |
+| [76551f5](https://github.com/sibongilee/BudgetTrackerApplication/commit/76551f5daa7b297a1dbe94bc3a909e838706d1a0) | Log budget goals update in BudgetActivity | 2026-06-15 19:08:10 |
+| [27d8cbf](https://github.com/sibongilee/BudgetTrackerApplication/commit/27d8cbf9563e86d58ead2199fedab9b8aa7a67af) | Log success message when a category is added | 2026-06-15 19:06:44 |
+| [372e034](https://github.com/sibongilee/BudgetTrackerApplication/commit/372e03456dd7d6b1f56a77981680aa7256cb6c8f) | Add logging for successful expense save | 2026-06-15 19:05:04 |
+| [7e7ff2d](https://github.com/sibongilee/BudgetTrackerApplication/commit/7e7ff2df2dd930bbcb7b5b8bac6325951bafcc47) | Log new user registration in RegisterActivity | 2026-06-15 19:03:17 |
+| [e6dbefb](https://github.com/sibongilee/BudgetTrackerApplication/commit/e6dbefb5ae11131075dd0bef8892286a6bd9d9d7) | Add logging for login success and failure | 2026-06-15 19:01:35 |
+| [64076869](https://github.com/sibongilee/BudgetTrackerApplication/commit/64076869c7f96cd253dc76ccb0b95523f232bac1) | Add logging for navigation and dashboard events | 2026-06-15 18:59:04 |
+
+---
+
 ## Authors
 
 | Author | GitHub |
@@ -224,3 +238,4 @@ If this project helps you, please give it a star on GitHub!
 - Added SeekBar budget selection (R0 - R10,000)
 - Date range filtering for expenses
 - Material Design CardView UI components
+- Added comprehensive logging throughout the application
