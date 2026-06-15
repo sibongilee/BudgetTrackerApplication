@@ -8,6 +8,7 @@ import androidx.appcompat.widget.Toolbar
 class AddExpenseActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
+        Log.d("AddExpenseActivity", "Expense saved successfully")
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_add_expense)
 
