@@ -14,10 +14,10 @@ import android.util.Log
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
+        Log.d("MainActivity", "Dashboard opened for user: $username")
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_main)
-        Log.d("MainActivity", "Dashboard opened for user: $username")
 
         // Setup toolbar
         val toolbar = findViewById<Toolbar>(R.id.toolbar)
