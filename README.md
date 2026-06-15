@@ -98,6 +98,9 @@ BudgetTrackerApplication/
 │   │   ├── DatabaseHelper.kt
 │   │   ├── Expense.kt
 │   │   └── ExpenseAdapter.kt
+│   │   └── GraphActivity.kt
+│   │   └──RewardsActivity.kt
+
 │   ├── res/
 │   │   ├── layout/
 │   │   │   ├── activity_login.xml
@@ -108,6 +111,9 @@ BudgetTrackerApplication/
 │   │   │   ├── activity_add_category.xml
 │   │   │   ├── activity_budget.xml
 │   │   │   └── item_expense.xml
+│   │   │   └──activity_rewards.xml
+│   │   │   └──activity_graph.xml
+
 │   │   ├── drawable/
 │   │   │   ├── logo.png
 │   │   │   └── spinner_background.xml
@@ -213,6 +219,8 @@ GitHub Actions was implemented to automate the application build process and ver
 Video Demonstration
 
 YouTube Video Link:
+(https://youtube.com/shorts/GWmahnVScro?si=rF7s191qFit_8ADd)
+
 
 --
 
