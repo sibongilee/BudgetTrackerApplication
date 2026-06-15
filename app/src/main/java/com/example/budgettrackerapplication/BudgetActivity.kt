@@ -15,6 +15,7 @@ import com.example.budgettrackerapplication.R
 
 class BudgetActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
+        Log.d("BudgetActivity", "Budget goals updated")
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_budget)
