@@ -14,6 +14,8 @@ import com.google.android.material.textfield.TextInputLayout
 class LoginActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
+        Log.d("LoginActivity", "Login successful for user:$username")
+        Log.e("LoginActivity", "Login failed")
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_login)
